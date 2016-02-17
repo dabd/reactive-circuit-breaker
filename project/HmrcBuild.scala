@@ -43,7 +43,8 @@ private object AppDependencies {
       override lazy val test = Seq(
         "org.scalatest" %% "scalatest" % "2.2.4" % scope,
         "org.pegdown" % "pegdown" % "1.5.0" % scope,
-        "com.typesafe.play" %% "play-test" % PlayVersion.current % scope
+        "com.typesafe.play" %% "play-test" % PlayVersion.current % scope,
+        "org.scalacheck" %% "scalacheck" % "1.12.5" % scope
       )
     }.test
   }
